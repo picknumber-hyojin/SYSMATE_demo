@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <!--Swiper's CSS -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -68,35 +66,21 @@
             </div>
         </div>
         <div class="media__content">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./image/media_1.png" alt="media">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./image/media_2.jpg" alt="media">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./image/media_3.jpg" alt="media">
-                    </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./image/media_1.png" alt="media">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./image/media_2.jpg" alt="media">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./image/media_3.jpg" alt="media">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Swiper JS-->
-    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            
-        });
-    </script>
 </body>
 </html>
