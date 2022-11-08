@@ -29,7 +29,6 @@ body{
     padding: 1rem;
     height: calc(100% / 2);
     justify-content: center;
-    align-items: center;
 }
 
 
@@ -37,6 +36,11 @@ body{
 .content__aside-logo span{
     font-size: 41px;
     margin-top: 0.325rem;
+}
+
+.date{
+    margin-top:1rem;
+    font-size: 17px;
 }
 
 
@@ -105,14 +109,14 @@ body{
 }
 
 .content__call-now p{
-    font-size:30px;
+    font-size:35px;
     font-weight: 700;
 }
 
 .content__call-now h2{
-    font-size: 175px;
+    font-size: 250px;
     font-weight: 800;
-    margin:1rem 0;
+    margin:0.325rem 0;
 }
 
 .phone_call{
@@ -122,6 +126,17 @@ body{
 
 .phone_call svg{
     fill:#328FC3;
+}
+
+.phone_call .callStandby{
+    margin-left: 1rem;
+    color:#676464;
+    font-size: 25px;
+}
+
+
+.phone_call .callStandby svg{
+    fill:#676464;
 }
 
 .content__call-prev{
@@ -134,18 +149,67 @@ body{
     background-color: #fff;
     margin-right: 0.5rem;
     border-radius: 15px;
-    font-size: 48px;
     text-align: center;
     height: 138px;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#AFAFAF;
+    color:#676464;
+    flex-direction: column;
 }
 
 .content__call-prev li:last-child{
-    margin-right: 0rem;}
+    margin-right: 0rem;
+}
+
+
+.callNext{
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+
+/* .callNext::after{
+    content:"";
+    display: block;
+    width:100%;
+    height:2px;
+    background-color: rgb(204, 204, 204);
+    margin:1rem 0;
+} */
+
+
+
+.content__call-number svg{
+    fill:#717171
+}
+
+.content__call-now .callStandby{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+}
+
+.content__call-now .callStandby p{
+    font-size:32px;
+    margin-left: 0.5rem;
+
+}
+
+.content__call-number .callStandby{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+
+.content__call-number .callStandby p{
+    font-size:26px;
+    margin-left: 0.5rem;
+
+}
 
 
 .media__content{
@@ -184,3 +248,5 @@ to {opacity: 1}
 @media only screen and (max-width: 300px) {
 .text {font-size: 11px}
 }
+
+
